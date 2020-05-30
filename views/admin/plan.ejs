@@ -1,0 +1,105 @@
+<%- include('./includes/head.ejs') %>
+
+</head>
+
+
+<%- include('./includes/topnav.ejs') %>
+
+<%- include('./includes/sidenav.ejs') %>
+
+
+<div class="page-wrapper">
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                <h4 class="page-title center">תוכנית אימונים</h4>
+                <div class="d-flex align-items-center">
+                </div>
+            </div>
+            <div class="col-12 align-self-center">
+                <div class="d-flex no-block align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">בית</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">תוכנית אימונים</li>
+                            <li class="breadcrumb-item" aria-current="page">הצג תוכניות אימונים</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+
+                <div class="table-responsive">
+                    <table class="table v-middle">
+                        <thead>
+                            <tr class="bg-light">
+                                <th class="border-top-0">תכנית מס'</th>
+                                <th class="border-top-0">סוג מנוי</th>
+                                <th class="border-top-0">מתאים למי</th>
+                                <th class="border-top-0">תיאור</th>
+                                <th class="border-top-0">ימי פעילות</th>
+                                <th class="border-top-0">שעות פעילות</th>
+                                <th class="border-top-0">מחיר</th>
+                                <th class="border-top-0">אימונים לתרגול בבית</th>
+                                <th class="border-top-0">כפתור צור קשר</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (p of plan) { %>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="m-r-10">
+                                            <a class="btn btn-circle btn-primary text-white"><%=num++%></a>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="">
+                                        <h4 class="m-b-0 font-16"><%=p.typeSubscription%></h4>
+                                    </div>
+                </div>
+                </td>
+                <td><%=p.subSubscription%></td>
+                <td>
+                    <label class="label label-danger"><%=p.description%></label>
+                </td>
+                <td>
+                    <%=p.whichDays.fromDay%> -
+                    <%=p.whichDays.toDay%>
+                </td>
+                <td> <%=p.openingTimes.fromTime%>A.M -
+                    <%=p.openingTimes.toTime%>P.M</td>
+                <td>$<%=p.price%></td>
+                <td>
+                    <h5 class="m-b-0"><%=p.advisorActivity%></h5>
+                </td>
+                <td>
+                    <h5 class="m-b-0"><%=p.submitForm%></h5>
+                </td>
+                <td>
+                    <a href="/admin/edit-plan/<%=p._id%>" class="btn btn-success"
+                        style="margin-bottom: 5px; padding: 5px 14px;">שנה</a>
+                    <form action="/admin/delete-plan" method="POST">
+                        <input type="hidden" value="<%=p._id %>" name="planId">
+                        <button class="btn btn-danger" type="submit">מחק</button>
+                    </form>
+                </td>
+                </tr>
+                <%}%>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('./includes/footer.ejs') %>
+
+                <%- include('./includes/scripts.ejs') %>

@@ -1,0 +1,988 @@
+<%- include('./includes/head.ejs') %>
+
+</head>
+
+
+<%- include('./includes/nav.ejs') %>
+<!-- <div class="quick-access col-md-1 col-sm-2 col-xs-3">
+								<div class="shopping-cart">
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<div class="mini-cart product-popular">
+										<h3 class="title">Your Cart</h3>
+										<ul>
+											<li>
+												<div class="product-image">
+													<a href="#"><img src="images/popular-product.jpg" alt=""></a>
+												</div>
+												<div class="info-products">
+													<div class="product-name">Lorem ipsum dolor sit amet consectetur
+													</div>
+													<div class="price-box">
+														<span class="regular-price">$200.60</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="product-image">
+													<a href="#"><img src="images/popular-product.jpg" alt=""></a>
+												</div>
+												<div class="info-products">
+													<div class="product-name">Lorem ipsum dolor sit amet consectetur
+													</div>
+													<div class="price-box">
+														<span class="regular-price">$200.60</span>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<button class="check" title="Check out" type="button">
+											<span>Check out</span>
+										</button>
+									</div>
+								</div>
+								<div class="search">
+									<a href="#"><i class="fa fa-search"></i></a>
+									<form id="search" method="post" name="">
+										<div class="search-box">
+											<input class="top-search" type="text" placeholder="Enter your keywords"
+												name="search" title="Search">
+											<input class="sub-search" type="image" src="images/search.png" alt="Submit">
+										</div>
+									</form>
+								</div>
+							</div> -->
+<button class="menu-button" id="open-button"></button>
+</div>
+</div>
+</header>
+<!--End Header-->
+<section class="slide-container to-top">
+	<div class="ms-fullscreen-template" id="slider1-wrapper">
+		<!-- masterslider -->
+		<div class="master-slider ms-skin-default" id="masterslider-index">
+			<div class="ms-slide slide-1" data-delay="0">
+				<div class="slide-pattern"></div>
+				<img src="images/blank.gif" data-src="images/bg_4.jpg" alt="lorem ipsum dolor sit" />
+				<h3 class="ms-layer hps-title1" style="left:95px" data-type="text" data-ease="easeOutExpo"
+					data-delay="1000" data-duration="0" data-effect="skewleft(30,80)">
+					<%=main.smallTitle%></h3>
+				<h3 class="ms-layer hps-title3" style="left:91px" data-type="text" data-delay="1900" data-duration="0"
+					data-effect="rotate3dtop(-100,0,0,40,t)" data-ease="easeOutExpo">
+					<%=main.bigTitle%>
+				</h3>
+
+				<h3 class="ms-layer hps-title4" style="left:95px" data-type="text" data-delay="2500" data-duration="0"
+					data-effect="rotate3dtop(-100,0,0,18,t)" data-ease="easeOutExpo">
+					<%=main.clickBtn%> </h3>
+			</div>
+			<!--div class="ms-slide slide-4">
+							   <div class="slide-pattern"></div>
+								<video data-autopause="false" data-mute="true" data-loop="true" data-fill-mode="fill">
+									<source src="images/video/demo.mp4" type="video/mp4"/>									
+								</video>  
+							</div-->
+		</div>
+		<!-- end of masterslider -->
+		<div class="to-bottom" id="to-bottom"><i class="fa fa-angle-down"></i></div>
+	</div>
+</section>
+<!--End Banner-->
+<div class="contents-main" id="contents-main">
+	<!--Class Man-Girl-->
+	<section class="man-girl">
+		<div class="container">
+			<div class="row">
+				<div class="content-main content-main-left col-md-6 col-sm-6 col-xs-12">
+					<div class="img-class img-class-left">
+						<img src="images/image-1.png" alt="">
+					</div>
+					<div class="class-content class-content-left">
+						<div class="title">
+							<h3><%=main.menTitle%></h3>
+						</div>
+						<div class="class-content-text">
+							<p><%=main.descriptionMen%></p>
+							<div class="join"><a href="#"><%=main.joinNow%></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="content-main content-main-right col-md-6 col-sm-6 col-xs-12 ">
+					<div class="img-class img-class-right">
+						<img src="images/image-2.png" alt="">
+					</div>
+					<div class="class-content class-content-right">
+						<div class="title">
+							<h3><%=main.womenTitle%></h3>
+						</div>
+						<div class="class-content-text">
+							<p><%=main.descriptionWomen%></p>
+							<div class="join"><a href="#"><%=main.joinNow%></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="scroll-to training modern">
+
+		<div class="wpb-wrapper owl-carousel" data-nav="t-nav-"
+			data-plugin-options='{"autoPlay":false,"autoHeight":true}'>
+			<!-- PARALLAX WINDOWS -->
+			<div class="parallax-block-wrap-module auto-width">
+				<div class="parallax-block bt-advance-parallax" id="parallax-block-modern">
+					<!-- PARALLAX CONTENT -->
+					<div class="control-button">
+						<div class="nav-wrap hidden">
+							<div class="nav-wrap-in next">
+								<span class="nav-next"></span>
+							</div>
+							<div class="nav-wrap-in prev">
+								<span class="nav-prev"></span>
+							</div>
+						</div>
+						<div class="button-wrap">
+							<span class="button close-btn"></span>
+						</div>
+					</div>
+					<div class="parallax-background">
+						<!--Textured and color-->
+						<div class="parallax-background-overlay"></div>
+						<img alt="" src="images/boxing/bg_44.jpg">
+					</div>
+
+					<div class="parallax-block-content default-pos">
+						<div class="container">
+							<div class="parallax-text parallax-boxing parallax-gallery">
+								<p>גלריית אימונים</p>
+								<h1>בואו תצפו</h1>
+								<h1>איך מתקיימים האימונים שלנו!</h1>
+								<span class="button open-btn"><span>לחצו לצפות!</span></span>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-loading"><span class="loading"><img src="images/loading-black.gif"
+								alt="" /></span></div>
+					<!-- GALLERY CONTENT -->
+					<div class="parallax-content-wrap">
+						<div class="parallax-content hidden">
+							<div class="parallax-content-in">
+								<div class="parallax-col">
+									<div class="parallax-row in-pos box1">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-1.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img class="image-show" src="images/parallax-large/parallax-1.jpg"
+														alt="" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-2.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img src="images/parallax-large/parallax-2.jpg" class="image-show"
+														alt="" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img alt="" src="images/parallax-3.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-3.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3 mr-top">
+													<img src="images/parallax-4.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-4.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w3">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img alt="" src="images/parallax-5.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-5.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-6.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-6.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="parallax-row in-pos box2">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img alt="" src="images/parallax-7.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-7.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img alt="" src="images/parallax-8.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-8.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img alt="" src="images/parallax-9.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-9.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3">
+													<img alt="" src="images/parallax-10.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-10.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="parallax-col">
+									<div class="parallax-row in-pos box1">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img alt="" src="images/parallax-1.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-1.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img alt="" src="images/parallax-2.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-2.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img alt="" src="images/parallax-3.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-3.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3 mr-top">
+													<img alt="" src="images/parallax-4.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-4.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w3">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img alt="" src="images/parallax-5.jpg" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-5.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-6.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-6.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="parallax-row in-pos box2">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-7.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-7.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-8.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-8.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-9.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-9.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3">
+													<img src="images/parallax-10.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-10.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="parallax-col">
+									<div class="parallax-row in-pos box1">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-1.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-1.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-2.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-2.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-3.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-3.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3 mr-top">
+													<img src="images/parallax-4.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-4.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w3">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-5.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-5.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-6.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-6.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="parallax-row in-pos box2">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-7.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-7.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-8.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-8.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-9.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-9.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3">
+													<img src="images/parallax-10.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-10.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="parallax-col">
+									<div class="parallax-row in-pos box1">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-1.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-1.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-2.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-2.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-3.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-3.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3 mr-top">
+													<img src="images/parallax-4.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-4.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w3">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-5.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-5.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-6.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-6.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="parallax-row in-pos box2">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-7.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-7.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-8.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-8.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-9.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-9.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3">
+													<img src="images/parallax-10.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-10.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="parallax-col">
+									<div class="parallax-row in-pos box1">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-1.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-1.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-2.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-2.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-3.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-3.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3 mr-top">
+													<img src="images/parallax-4.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-4.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w3">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-5.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-5.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-6.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-6.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="parallax-row in-pos box2">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-7.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-7.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-8.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-8.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-9.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-9.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3">
+													<img src="images/parallax-10.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-10.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="parallax-col">
+									<div class="parallax-row in-pos box1">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-1.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-1.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-2.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-2.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-3.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-3.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3 mr-top">
+													<img src="images/parallax-4.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-4.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w3">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-5.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-5.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-6.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-6.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="parallax-row in-pos box2">
+										<div class="parallax-row-w1">
+											<div class="parallax-box-image">
+												<div class="thumb w2">
+													<img src="images/parallax-7.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-7.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-8.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-8.jpg"
+														class="image-show" />
+												</div>
+											</div>
+											<div class="parallax-box-image">
+												<div class="thumb">
+													<img src="images/parallax-9.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-9.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+										<div class="parallax-row-w2">
+											<div class="parallax-box-image">
+												<div class="thumb w3">
+													<img src="images/parallax-10.jpg" alt="" />
+												</div>
+												<div class="show_box hidden">
+													<img alt="" src="images/parallax-large/parallax-10.jpg"
+														class="image-show" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-show-large hidden">
+								<div class="item-contain"></div>
+								<div class="loading"><img src="images/loading-black.gif" alt="" /></div>
+							</div>
+						</div>
+					</div>
+					<!-- end GALLERY CONTENT -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Modern Equipment-->
+
+	<!--Price Table-->
+	<section class="price-table">
+		<div class="container">
+			<div class="row">
+				<div class="price-table-title col-md-12 col-sm-12 col-xs-12">
+					<h3>כמה עולה אימון בכלל?</h3>
+					<h2>מחירים והטבות ללקוחות!</h2>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="price-contents">
+						<%for(p of plan)  {%>
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="price-tb">
+								<div class="col-md-12 price-table-content">
+									<div class="price-table-img">
+										<img alt="" src="images/newproducts/images-3.png">
+									</div>
+									<div class="price-table-text">
+										<h3><%=p.typeSubscription%></h3>
+										<h2><%=p.subSubscription%></h2>
+										<div class="border-bottom"></div>
+										<p><%=p.description%></p>
+										<div class="c-price">
+
+											<div class="price">
+												<span>$<%=p.price%></span>
+											</div>
+											<a href="#"><span><%=p.advisor%></span></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 price-list">
+									<div class="price-table-1">
+										<ul>
+											<li class="icon"><i class="fa fa-calendar-o"></i>
+											</li>
+											<li>ימי פעילות : <%=p.whichDays.fromDay%> - <%=p.whichDays.toDay%></li>
+										</ul>
+										<ul>
+											<li class="icon"><i class="fa fa-clock-o"></i></li>
+											<li>זמני פעילות: <%=p.openingTimes.fromTime%>A.M -
+												<%=p.openingTimes.toTime%>P.M</li>
+										</ul>
+										<ul>
+											<li class="icon"><i class="fa fa-leaf"></i></li>
+											<li>אימונים לתרגול בבית: <%=p.advisorActivity%>!</li>
+										</ul>
+									</div>
+									<div class="plan">
+										<a href="#"><%=p.submitForm%></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="price-tb">
+								<div class="col-md-12 price-table-content">
+									<div class="price-table-img">
+										<img alt="" src="images/newproducts/images-2.png">
+									</div>
+									<div class="price-table-text">
+										<h3>מנוי שבועי</h3>
+										<h2>אימון לבנים/בנות</h2>
+										<div class="border-bottom"></div>
+										<p>Phasellus molestie magna non est bibendum non
+											venenatis nisl
+											tempor lorem ipsum dolor.</p>
+										<div class="c-price">
+
+											<div class="price">
+												<span>$59</span>
+											</div>
+											<a href="#"><span>הצטרף עוד היום!</span></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12  price-list">
+									<div class="price-table-1">
+										<ul>
+											<li class="icon"><i class="fa fa-calendar-o"></i>
+											</li>
+											<li>ימי פעילות : ראשון - שישי</li>
+										</ul>
+										<ul>
+											<li class="icon"><i class="fa fa-clock-o"></i></li>
+											<li>זמני פעילות: 10A.M - 9P.M</li>
+										</ul>
+										<ul>
+											<li class="icon"><i class="fa fa-leaf"></i></li>
+											<li>אימונים לתרגול בבית: ברור!</li>
+										</ul>
+									</div>
+									<div class="plan">
+										<a href="#">Purchase Plan</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="price-tb">
+								<div class="col-md-12 price-table-content">
+									<div class="price-table-img">
+										<img alt="" src="images/newproducts/images-1.png">
+									</div>
+									<div class="price-table-text">
+										<h3>אימון יומי</h3>
+										<h2>אימון לבנים/בנות</h2>
+										<div class="border-bottom"></div>
+										<p>Phasellus molestie magna non est bibendum non
+											venenatis nisl
+											tempor lorem ipsum dolor.</p>
+										<div class="c-price">
+
+											<div class="price">
+												<span>$59</span>
+											</div>
+											<a href="#"><span>הצטרף עוד היום!</span></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 price-list">
+									<div class="price-table-1">
+										<ul>
+											<li class="icon"><i class="fa fa-calendar-o"></i>
+											</li>
+											<li>ימי פעילות : ראשון - שישי</li>
+										</ul>
+										<ul>
+											<li class="icon"><i class="fa fa-clock-o"></i></li>
+											<li>זמני פעילות: 10A.M - 9P.M</li>
+										</ul>
+										<ul>
+											<li class="icon"><i class="fa fa-leaf"></i></li>
+											<li>אימונים לתרגול בבית: ברור!</li>
+										</ul>
+									</div>
+									<div class="plan">
+										<a href="#">Purchase Plan</a>
+									</div>
+								</div>
+							</div>
+						</div> -->
+						<%}%>
+										</div>
+									</div>
+								</div>
+							</div>
+	</section>
+	<!--End Price Table-->
+</div>
+</div>
+</section>
+
+<!--Footer-->
+
+<%- include('./includes/footer.ejs') %>

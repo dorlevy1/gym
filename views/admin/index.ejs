@@ -1,0 +1,253 @@
+<%- include('./includes/head.ejs') %>
+<style>
+    .card {
+        margin: 0 !important;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .btn-white {
+        color: white;
+        border: 1px solid white;
+    }
+</style>
+</head>
+
+
+<!-- ============================================================== -->
+<!-- Topbar header - style you can find in pages.scss -->
+<!-- ============================================================== -->
+
+<%- include('./includes/topnav.ejs') %>
+
+
+
+<!-- ============================================================== -->
+<!-- End Topbar header -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- Left Sidebar - style you can find in sidebar.scss  -->
+<!-- ============================================================== -->
+<%- include('./includes/sidenav.ejs') %>
+
+<!-- ============================================================== -->
+<!-- End Left Sidebar - style you can find in sidebar.scss  -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- Page wrapper  -->
+<!-- ============================================================== -->
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+
+        <div class="row">
+
+            <div class="col-5 align-self-center">
+                <h4 class="page-title">Dashboard</h4>
+                <div class="d-flex align-items-center">
+
+                </div>
+
+            </div>
+            <div class="col-7 align-self-center">
+                <div class="d-flex no-block justify-content-end align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Info box -->
+        <!-- ============================================================== -->
+        <div class="card-group">
+            <div class="col-md-4" style="padding:0">
+                <div class="card text-center">
+                    <div style="padding: 2.25rem !important;" class="card-body bg-success text-white">
+                        <div class="d-inline-block m-l-15">
+                            <div class="d-flex align-items-center">
+                                <div class="m-r-10">
+                                    <span class="btn btn-circle btn-lg btn-white">
+                                        <i class="ti-plus text-white"></i>
+                                    </span>
+                                </div>
+                                <div class="">
+                                    הוסף תמונה חדשה לגלריה
+                                </div>
+                                <div class="ml-auto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4" style="padding:0">
+                <div class="card text-center">
+                    <div style="padding: 1.95rem;" class="card-body bg-cyan text-white">
+                        <span><i class="display-6 wi wi-sandstorm"></i></span>
+                        <div class="d-inline-block m-l-15">
+                            <span class="display-6">14°</span>
+                            <span class="font-24">C</span>
+                            <span class="font-18">/ 7° C</span>
+                        </div>
+                    </div>
+                    <div class="card-footer text-cyan bg-white">
+                        <%=date%>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="padding:0">
+                <div class="card text-center">
+                    <div style="padding: 2.25rem !important;" class="card-body  bg-primary text-white">
+                        <div class="d-inline-block m-l-15">
+                            <div class="d-flex align-items-center">
+                                <div class="m-r-10">
+                                    <span class="btn btn-circle btn-lg btn-white">
+                                        <i class="ti-plus text-white"></i>
+                                    </span>
+                                </div>
+                                <div class="">
+                                    הוסף תוכנית אימון חדשה
+                                </div>
+                                <div class="ml-auto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+
+            <!-- Card -->
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="m-r-10">
+                            <span class="btn btn-circle btn-lg btn-info">
+                                <i class="ti-wallet text-white"></i>
+                            </span>
+                        </div>
+                        <div>
+                            לקוחות חדשים החודש
+                        </div>
+                        <div class="ml-auto">
+                            <h2 class="m-b-0 font-light"><%=newClients%></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="m-r-10">
+                            <span class="btn btn-circle btn-lg btn-info">
+                                <i class="ti-wallet text-white"></i>
+                            </span>
+                        </div>
+                        <div>
+                            תכניות אימון
+                        </div>
+                        <div class="ml-auto">
+                            <h2 class="m-b-0 font-light"><%=plans%></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+            <!-- Card -->
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="m-r-10">
+                            <span class="btn btn-circle btn-lg bg-success">
+                                <i class="ti-shopping-cart text-white"></i>
+                            </span>
+                        </div>
+                        <div>
+                            לקוחות קבועים
+                        </div>
+                        <div class="ml-auto">
+                            <h2 class="m-b-0 font-light"><%=basedClients%>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+            <!-- Card -->
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="m-r-10">
+                            <span class="btn btn-circle btn-lg bg-warning">
+                                <i class="mdi mdi-currency-usd text-white"></i>
+                            </span>
+                        </div>
+                        <div>
+                            < רווח כללי>
+                        </div>
+                        <div class="ml-auto">
+                            <h2 class="m-b-0 font-light"><%=profit%>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+
+
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- Info box -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card card-task">
+                        <div class="card-body card-body-task">
+                            <h4 class="card-title">ביצוע משימות</h4>
+                            <div id="todo-lists-basic-demo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+
+    <%- include('./includes/footer.ejs') %>
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <%- include('./includes/scripts.ejs') %>
+    </body>
+
+    </html>

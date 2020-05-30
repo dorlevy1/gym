@@ -1,0 +1,150 @@
+<%- include('./includes/head.ejs') %>
+
+</head>
+
+
+<%- include('./includes/topnav.ejs') %>
+
+
+<%- include('./includes/sidenav.ejs') %>
+
+
+<div class="page-wrapper">
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                <h4 class="page-title center">עמוד תצוגה ראשית</h4>
+                <div class="d-flex align-items-center">
+                </div>
+            </div>
+            <div class="col-2 align-self-center">
+                <div class="d-flex no-block justify-content-end align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <form action="/admin/edit-looksite" method="POST" class="form-horizontal">
+        <div class="form-body">
+
+            <hr class="m-t-0 m-b-40">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label text-right col-md-3">כותרת גדולה</label>
+                            <div class="col-md-9">
+                                <input type="text" value="<%=looksite.bigTitle %>" name="bigtitle" id="bigtitle"
+                                    class="form-control" placeholder="">
+                                <small class="form-control-feedback"> This is inline help </small> </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">כותרת קטנה</label>
+                            <div class="col-md-9">
+                                <input type="text" value="<%=looksite.smallTitle %>" name="smalltitle" id="smalltitle"
+                                    class="form-control form-control-danger" placeholder="12n">
+                                <small class="form-control-feedback"> This field has error. </small> </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label text-right col-md-3">כותרת לגבר</label>
+                            <div class="col-md-9">
+                                <input type="text" value="<%=looksite.menTitle %>" name="mentitle" id="mentitle"
+                                    class="form-control" placeholder="John doe">
+                                <small class="form-control-feedback"> This is inline help </small> </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">כותרת לאשה</label>
+                            <div class="col-md-9">
+                                <input type="text" value="<%=looksite.womenTitle %>" name="womentitle" id="womentitle"
+                                    class="form-control form-control-danger" placeholder="12n">
+                                <small class="form-control-feedback"> This field has error. </small> </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                </div>
+                <!--/row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label text-right col-md-3">תיאור לגבר</label>
+                            <div class="col-md-9">
+                                <textarea name="mendescription" value="<%=looksite.descriptionMen %>"
+                                    class="form-control " id="mendescription" cols="30"
+                                    rows="10">כתוב תיאור על התוכנית אימון</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label text-right col-md-3">תיאור לאשה</label>
+                            <div class="col-md-9">
+                                <textarea name="womendescription" value="<%=looksite.descriptionWomen %>"
+                                    class="form-control " id="womendescription" cols="30"
+                                    rows="10">כתוב תיאור על התוכנית אימון</textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/span-->
+                </div>
+                <!--/row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">כפתור לחיצה</label>
+                            <div class="col-md-9">
+                                <input type="text" name="clickbtn" value="<%=looksite.clickBtn %>" id="clickbtn"
+                                    class="form-control form-control-danger" placeholder="כן/לא">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">כפתור לחיצה באיזור נשים גברים</label>
+                            <div class="col-md-9">
+                                <input type="text" name="joinnow" value="<%=looksite.joinNow %>" id="joinnow"
+                                    class="form-control form-control-danger" placeholder="כן/לא">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+
+
+                    <!--/span-->
+                </div>
+            </div>
+            <hr>
+            <div class="form-actions">
+                <div class="card-body">
+                    <div class="text-right">
+                        <input type="hidden" name="planId">
+                        <button type="submit" class="btn btn-info">Submit</button>
+                        <button type="button" class="btn btn-dark">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <%- include('./includes/footer.ejs') %>
+
+    <%- include('./includes/scripts.ejs') %>

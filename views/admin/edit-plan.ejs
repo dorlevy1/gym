@@ -1,0 +1,149 @@
+<%- include('./includes/head.ejs') %>
+
+</head>
+
+<%- include('./includes/topnav.ejs') %>
+<%- include('./includes/sidenav.ejs') %>
+<div class="page-wrapper">
+
+    <form action="<% if(editMode) {%>/admin/edit-the-plan%><%}else{%>/admin/add-the-plan%><%}%>" method="POST" class="form-horizontal">
+        <div class="form-body">
+         
+            <hr class="m-t-0 m-b-40">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label text-right col-md-3">סוג מנוי</label>
+                            <div class="col-md-9">
+                                <input type="text" name="typeSubscription" id="typeSubscription" class="form-control"
+                                    placeholder="John doe" value="<%if(editMode) {%><%=plan.typeSubscription%> <%}%>">
+                                <small class="form-control-feedback"> This is inline help </small> </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">מתאים למי?</label>
+                            <div class="col-md-9">
+                                <input type="text" value="<%if(editMode) {%><%=plan.subSubscription%> <%}%>" name="subSubscription" id="subSubscription"
+                                    class="form-control form-control-danger" placeholder="12n">
+                                <small class="form-control-feedback"> This field has error. </small> </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                </div>
+                <!--/row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label text-right col-md-3">תיאור</label>
+                            <div class="col-md-9">
+                                <textarea name="description" class="form-control " id="description" cols="30"
+                                    rows="10">כתוב תיאור על התוכנית אימון</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">מחיר</label>
+                            <div class="col-md-9">
+                                <input type="text" name="price" value="<%if(editMode) {%><%=plan.price%> <%}%>" id="price" class="form-control form-control-danger"
+                                    placeholder="הכניס מחיר">
+                                <small class="form-control-feedback"> This field has error. </small> </div>
+                        </div>
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">ימי פעילות</label>
+                            <div class="col-md-9">
+                                <select class="form-control-selectTime form-control" value="<%if(editMode) {%><%=plan.whichDays.fromDay%> <%}%>" name="fromDay" id="fromDay">
+                                    <option value="ראשון">ראשון</option>
+                                    <option value="שני">שני</option>
+                                    <option value="שלישי">שלישי</option>
+                                    <option value="רביעי">רביעי</option>
+                                    <option value="חמישי">חמישי</option>
+                                    <option value="שישי">שישי</option>
+                                    <option value="שבת">שבת</option>
+                                </select>
+                                -
+                                <select class="form-control-selectTime form-control" placeholder="<%if(editMode) {%><%=plan.whichDays.toDay%> <%}%>" name="toDay" id="toDay">
+                                    <option value="ראשון">ראשון</option>
+                                    <option value="שני">שני</option>
+                                    <option value="שלישי">שלישי</option>
+                                    <option value="רביעי">רביעי</option>
+                                    <option value="חמישי">חמישי</option>
+                                    <option value="שישי">שישי</option>
+                                    <option value="שבת">שבת</option>
+                                </select></div>
+                        </div>
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">שעות פעילות</label>
+                            <div class="col-md-9">
+                                <select class="form-control-selectTime form-control" placeholder="<%if(editMode) {%><%=plan.openingTimes.fromTime%> <%}%>" name="fromTime" id="fromTime">
+                                    <option value="6">6:00</option>
+                                    <option value="7">7:00</option>
+                                    <option value="8">8:00</option>
+                                    <option value="9">9:00</option>
+                                    <option value="10">10:00</option>
+                                    <option value="11">11:00</option>
+                                    <option value="12">12:00</option>
+                                </select> -
+                                <select class="form-control-selectTime form-control" value="<%if(editMode) {%><%=plan.openingTimes.toTime%> <%}%>" name="toTime" id="toTime">
+                                    <option value="1">13:00</option>
+                                    <option value="2">14:00</option>
+                                    <option value="3">15:00</option>
+                                    <option value="4">16:00</option>
+                                    <option value="5">17:00</option>
+                                    <option value="6">18:00</option>
+                                    <option value="7">19:00</option>
+                                    <option value="8">20:00</option>
+                                    <option value="9">21:00</option>
+                                    <option value="10">22:00</option>
+                                    <option value="11">23:00</option>
+                                </select></div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                </div>
+                <!--/row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">טיפים בסוף אימון:</label>
+                            <div class="col-md-9">
+                                <input type="text" value="<%if(editMode) {%><%=plan.advisorActivity%> <%}%>" name="advisorActivity" id="advisorActivity"
+                                    class="form-control form-control-danger" placeholder="כן/לא">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">כפתור צור קשר</label>
+                            <div class="col-md-9">
+                                <input type="text" name="submitForm" value="<%if(editMode) {%><%=plan.submitForm%> <%}%>" id="submitForm"
+                                    class="form-control form-control-danger" placeholder="צור איתי קשר">
+                                    
+                                    </div>
+</div>
+</div>
+
+<!--/span-->
+</div>
+</div>
+<hr>
+<div class="form-actions">
+    <div class="card-body">
+        <div class="text-right">
+                <input type="hidden" value="<%if(plan._id){%><%= plan._id %><%}else{%>''<%}%>" name="planId">
+        <button type="submit" class="btn btn-info">Submit</button>
+        <button type="button" class="btn btn-dark">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+
+<%- include('./includes/footer.ejs') %>
+
+<%- include('./includes/scripts.ejs') %>

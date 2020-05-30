@@ -1,0 +1,133 @@
+<%- include('./includes/head.ejs') %>
+
+</head>
+
+
+<%- include('./includes/topnav.ejs') %>
+
+
+<%- include('./includes/sidenav.ejs') %>
+
+
+<div class="page-wrapper">
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 align-self-center">
+                <h4 class="page-title center">עמוד תצוגה ראשית</h4>
+                <div class="d-flex align-items-center">
+                </div>
+            </div>
+            <div class="col-2 align-self-center">
+                <div class="d-flex no-block justify-content-end align-items-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <form action="/admin/edit-footer" method="POST" class="form-horizontal">
+        <div class="form-body">
+
+            <hr class="m-t-0 m-b-40">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label text-right col-md-3">כותרת ימנית</label>
+                            <div class="col-md-9">
+                                <input type="text" value="<%=footer.rightTitle %>" name="righttitle" id="righttitle"
+                                    class="form-control" placeholder="">
+                                <small class="form-control-feedback"> This is inline help </small> </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                    <div class="col-md-6">
+                        <div class="form-group has-danger row">
+                            <label class="control-label text-right col-md-3">כותרת שמאלית</label>
+                            <div class="col-md-9">
+                                <input type="text" value="<%=footer.leftTitle %>" name="lefttitle" id="lefttitle"
+                                    class="form-control form-control-danger" placeholder="">
+                                <small class="form-control-feedback"> This field has error. </small> </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                </div>
+
+                <!--/row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label text-right col-md-3">תיאור כותרת ימנית</label>
+                            <div class="col-md-9">
+                                <textarea name="description" value="<%=footer.description %>" class="form-control "
+                                    id="description" cols="30" rows="10">תיאור כותרת ימנית</textarea>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="control-label text-right col-md-3">מדינה</label>
+                            <div class="col-md-2">
+                                <input name="country" value="<%=footer.country %>" class="form-control " id="country"
+                                    type="text">
+                            </div>
+                            <label class="control-label text-right col-md-3">עיר</label>
+
+                            <div class="col-md-2">
+                                <input name="city" value="<%=footer.city %>" class="form-control " id="city"
+                                    type="text">
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                <label class="control-label text-right col-md-3">מס' טלפון</label>
+                                <div class="col-md-9">
+                                    <input name="phone" value="<%=footer.phone %>" class="form-control " id="phone"
+                                        type="text">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                <label class="control-label text-right col-md-3">אי-מייל</label>
+                                <div class="col-md-9">
+                                    <input name="email" value="<%=footer.email %>" class="form-control " id="email"
+                                        type="text">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--/span-->
+                </div>
+                <!--/row-->
+
+            </div>
+            <hr>
+            <div class="form-actions">
+                <div class="card-body">
+                    <div class="text-right">
+                        <input type="hidden" name="planId">
+                        <button type="submit" class="btn btn-info">Submit</button>
+                        <button type="button" class="btn btn-dark">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <%- include('./includes/footer.ejs') %>
+
+    <%- include('./includes/scripts.ejs') %>
