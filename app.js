@@ -19,7 +19,7 @@ app.use('/admin', adminRoutes)
 const MONGODB_URI = 'mongodb+srv://dbgym1:dbi6263xsd@cluster0-ldw0q.mongodb.net/gym?retryWrites=true&w=majority';
 
 mongoose.connect(MONGODB_URI).then(result => {
-    app.listen(3000)
+    app.listen(3001)
     // mongoose.createConnection.db.listCollections({ name: 'blabla' }).then(e => console.log(e)).catch(err => {
     //     console.log(err);
     // })
