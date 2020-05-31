@@ -24,7 +24,7 @@ exports.getContact = (req, res, next) => {
         res.render('contact-me', {
             pageTitle: 'Contact',
             path: '/contact-me',
-            footer: footer
+            footer: footer[0]
         });
     }).catch(err => console.log(err))
 }
