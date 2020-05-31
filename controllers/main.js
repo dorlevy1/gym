@@ -19,10 +19,14 @@ exports.getIndex = (req, res, next) => {
     }).catch(err => console.log(err))
 }
 exports.getContact = (req, res, next) => {
-    res.render('contact-me', {
-        pageTitle: 'Contact',
-        path: '/contact-me',
-    });
+    Footer.find().then(footer => {
+
+        res.render('contact-me', {
+            pageTitle: 'Contact',
+            path: '/contact-me',
+            footer: footer
+        });
+    }).catch(err => console.log(err))
 }
 
 
